@@ -34,4 +34,10 @@ class Application @Inject()(ws: WSClient)(config: Configuration) extends Control
 
   }
 
+  def test = Action { implicit request =>
+
+    Ok("ああああ")
+
+  }
+
 }

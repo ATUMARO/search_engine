@@ -3,7 +3,7 @@
 # ~~~~
 
 #index
-GET         /                  controllers.Application.index
+GET         /event                 controllers.Application.test
 
 
 # Map static resources from the /public folder to the /assets URL path
