@@ -1,0 +1,42 @@
+@(orders: Seq[Menu])
+@main {
+    <div id="container">
+        <div id="menu">
+            <div class="treemenu">
+                <div class="list-group">
+                @for(order <- orders) {
+                    <a href="#" class="list-group-item active">@order.title</a>
+                    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item">Morbi leo risus</a>
+                }
+                </div>
+            </div>
+        </div>
+        <div id="contents">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel info</h3>
+                </div>
+                <div class="panel-body">
+
+                </div>
+            </div>
+        </div>
+        <div id="right-menu">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel info</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">heading</div>
+                <div class="panel-body">Panel content</div>
+            </div>
+        </div>
+    </div>
+}

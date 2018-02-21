@@ -1,0 +1,29 @@
+@(orders: Seq[Menu])
+@main {
+    <div id="container">
+
+        <div id="a-box"></div>
+
+        <div id="b-box">
+            <div class="treemenu">
+            @for(order <- orders) {
+                <div class="lv1btn">@order.toString()</div>
+                <div class="lv1body">
+                    <div class="lv2btn">→tree btn 2</div>
+                    <div class="lv2body">
+                        <div class="lv3btn">→→tree btn 3</div>
+                        <div class="lv3body">
+                            <div>→→→<a href="#">link btn</a></div>
+                            <div>→→→<a href="#">link btn</a></div>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+
+        <div id="c-box">あああああああ</div>
+
+        <div id="d-box"></div>
+    </div>
+}
